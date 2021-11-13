@@ -41,10 +41,10 @@ const MainNavBar = () => {
                   <Nav className='justify-content-end' style={{ width: '100%' }}>
                     {/* AUTHROIZATION -------------------------------------- */}
                     {Auth.loggedIn() ? (
-                      <React.Fragment>
+                      <>
                         <Profile />
                         <Logout />
-                      </React.Fragment>
+                      </>
                     ) : (
                       <LoginSignUp />
                     )}
